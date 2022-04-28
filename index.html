@@ -38,16 +38,18 @@
         width: 100%;
       }
 
-      .sidebar {
-        position: absolute;
-        margin: 20px 20px 30px 20px;
-        width: 25%;
-        top: 0;
-        bottom: 0;
-        padding: 20px;
-        background-color: #fff;
-        overflow-y: scroll;
-      }
+.sidebar {
+background-color: rgba(35, 55, 75, 0.9);
+color: #fff;
+padding: 6px 12px;
+font-family: monospace;
+z-index: 1;
+position: absolute;
+top: 0;
+left: 0;
+margin: 12px;
+border-radius: 4px;
+}
 
       .card {
         font-size: small;
@@ -92,7 +94,7 @@
       mapboxgl.accessToken = 'pk.eyJ1IjoiY2Fub3B5bWFwcGluZ2NvIiwiYSI6ImNrd3dzOXk3ejA3ODEycHF0ZHZrejVsZTkifQ.curorfyeruXgXjIsa_L6Cw';
       const map = new mapboxgl.Map({
         container: 'map', // Specify the container ID
-        style: 'mapbox://styles/mapbox/light-v10', // Specify which map style to use
+        style: 'mapbox://styles/canopymappingco/cl2j39vbr000g14nxbitu1ybi', // Specify which map style to use
         center: [-79.95269165220009, 43.0725747032835], // Specify the starting position [lng, lat]
         zoom: 11 // Specify the starting zoom
       });
